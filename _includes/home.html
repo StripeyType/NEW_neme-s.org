@@ -1,11 +1,18 @@
 <div id="home" class="container pt-3">
   <div class="row">
     <div class="col">
-      <p class="lead">
+      <p class="lead text-center">
         The New England Model Engineering Society is a group for those who enjoy metal working and machining.<br>
         We meet monthly in Waltham MA<br>
       </p>
-      <h3>Next Meeting:</h3>
+      <h3 class="text-left">Next Meeting:</h3>
+      <strong class="text-right">{{ site.data.meeting.when }}</strong><br>
+      <p id="description" class="text-center">
+        {{ site.data.meeting.description }}
+      </p>
+      <p id="location" class="text-center">
+        {{ site.data.meeting.where }}
+      </p>
     </div>
   </div>
 </div>
