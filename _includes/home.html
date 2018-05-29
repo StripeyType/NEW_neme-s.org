@@ -5,14 +5,24 @@
         The New England Model Engineering Society is a group for those who enjoy metal working and machining.<br>
         We meet monthly in Waltham MA<br>
       </p>
-      <h3 class="text-left">Next Meeting:</h3>
-      <strong class="text-right">{{ site.data.meeting.when }}</strong><br>
-      <p id="description" class="text-center">
-        {{ site.data.meeting.description }}
-      </p>
-      <p id="location" class="text-center">
-        {{ site.data.meeting.where }}
-      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div>
+        <div class="float-left"><h2>Next Meeting:</h2></div>
+        <div class="float-right"><h2>{{ site.data.meeting.when }}</h2></div>
+        <br>
+      </div>
+      <div class="float-none">
+        <p id="description" class="text-center">
+        <hr>
+          {{ site.data.meeting.description }}
+        </p>
+        <p id="location" class="text-center">
+          {{ site.data.meeting.where }}
+        </p>
+      </div>
     </div>
   </div>
 </div>
