@@ -1,0 +1,16 @@
+# Site settings
+title: "New England Model Engineering Society"
+email:
+author:
+description: "New England Model Engineering Society"
+url:
+
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css
+
+# Social icons
+show_social_icons: false 
+github_username: someGithubUser
+twitter_username: someTwitterUser
