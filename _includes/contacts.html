@@ -1,0 +1,28 @@
+<section class="text-center py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Current Club Officers and Contact Information</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Office</th>
+                <th scope="col">Name</th>
+                <th scope="col">E-Mail</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for contact in site.data.contacts %}
+              <tr>
+                <th scope="row">{{ contact.office }}</th>
+                <td>{{ contact.name }}</td>
+                <td>{{ contact.email }}</td>
+              </tr>
+            {% endfor %}  
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
