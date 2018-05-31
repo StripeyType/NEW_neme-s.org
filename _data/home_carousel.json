@@ -2,19 +2,19 @@
   {
     "title": "An image",
     "caption": "A caption",
-    "url": "img/banner.jpeg",
+    "url": "",
     "dest": "dest url"
   },
   {
     "title": "Another image",
     "caption": "Another caption",
-    "url": "img/banner.jpeg",
+    "url": "",
     "dest": "dest url"
   },
   {
     "title": "image",
     "caption": "caption",
-    "url": "img/banner.jpeg",
+    "url": "",
     "dest": "dest url"
   }
 ]
