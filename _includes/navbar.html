@@ -1,28 +1,16 @@
 <!-- NAV -->
 <nav class="navbar navbar-expand-md navbar-light py-4">
-  <a href="{{ site.baseurl }}/" class="navbar-brand">
-    <h3 class="d-inline align-middle pl-3 text-primary">NEMES</h3>
-  </a>
-  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
+      {% for item in site.data.bar.top %} 
       <li class="nav-item">
-        <a href="{{ site.baseurl }}/" class="nav-link">Home</a>
+        {% if item.ext == true %}
+          <a href="{{ item.link }}" class="nav-link">{{ item.name }}</a>
+        {% else %}
+          <a href="{{ site.baseurl }}{{ item.link }}" class="nav-link">{{ item.name }}</a>
+        {% endif %}
       </li>
-      <li class="nav-item">
-        <a href="{{ site.baseurl }}/contact.html" class="nav-link">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a href="{{ site.baseurl }}/join.html" class="nav-link">Join</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://squareup.com/store/new-england-model-engineering-society" class="nav-link">Store</a>
-      </li>
-      <li class="nav-item">
-        <a href="{{ site.baseurl }}/calendar.html" class="nav-link">Calendar</a>
-      </li>
+      {% endfor %}
     </ul>
   </div>
 </nav>
