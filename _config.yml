@@ -6,7 +6,6 @@ description: "New England Model Engineering Society"
 url:
 
 # Make a preview of the new site available from /new-site/
-baseurl: "/new-site/"
 
 # Build settings
 permalink: :title/
