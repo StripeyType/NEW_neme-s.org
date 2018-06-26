@@ -1,0 +1,61 @@
+{
+  "side": [
+    {
+      "name": "Archive",
+      "link": "/archives",
+      "ext": false
+    },
+    {
+      "name": "Gazette",
+      "link": "/gazette",
+      "ext": false
+    },
+    {
+      "name": "Other Clubs",
+      "link": "/clubs",
+      "ext": false
+    },
+    {
+      "name": "Projects",
+      "link": "/projects",
+      "ext": false
+    },
+    {
+      "name": "Shaper Resources",
+      "link": "/shaper",
+      "ext": false
+    },
+    {
+      "name": "Legal",
+      "link": "/legal",
+      "ext": false
+    }
+  ],
+  "top": [
+    {
+      "name": "Home",
+      "link": "/",
+      "ext": false
+    },
+    {
+      "name": "Contact",
+      "link": "/contact",
+      "ext": false
+    },
+    {
+      "name": "Join",
+      "link": "/join",
+      "ext": false
+    },
+    {
+      "name": "Store",
+      "link": "https://squareup.com/store/new-england-model-engineering-society",
+      "ext": true 
+    },
+    {
+      "name": "Events",
+      "link": "/calendar",
+      "ext": false 
+    }
+  ]
+}

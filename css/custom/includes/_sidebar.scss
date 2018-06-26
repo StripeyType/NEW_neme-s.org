@@ -1,0 +1,21 @@
+.navbar-nav.sidebar {
+  
+  .nav-item{
+    font-size: 1.4rem;
+    padding-right: 20px;
+  }
+
+  .nav-link{
+    color: $primary !important;
+  
+    &:hover {
+      color: $white !important;
+    }
+  }
+}
+
+#sidebar {
+  padding: 1.5rem;
+  margin: 1.5rem;
+  background-color: $info !important;
+}
