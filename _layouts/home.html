@@ -4,15 +4,21 @@
   <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3 hidden-xs" id="sidebar">
-      {% include sidebar.html %}
-      </div>
-    <div class="col-md-9" id="main"> 
+      <div class="col-md-12" id="header"> 
       {% include carousel.html name="home_carousel" data=site.data.home_carousel %}
       {% include navbar.html %}
-      {{ content }}
+      </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="col-md-3 hidden-xs">
+        <div id="sidebar">
+      {% include sidebar.html %}
+        </div>
+      </div>
+      <div class="col-md-9" id="main"> 
+        {{ content }}
+      </div>
+    </div>
   </div>
     {% include footer.html %}
   </body>

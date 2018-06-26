@@ -1,8 +1,8 @@
 <!-- NAV -->
-<nav class="navbar navbar-expand-md navbar-light py-4">
-  <div class="collapse navbar-collapse" id="navbarNav">
+<nav class="topnav navbar navbar-expand-md navbar-light py-4">
+  <div class="collapse navbar-collapse">
     <ul class="navbar-nav">
-      {% for item in site.data.bar.top %} 
+      {% for item in site.data.nav.top %} 
       <li class="nav-item">
         {% if item.ext == true %}
           <a href="{{ item.link }}" class="nav-link">{{ item.name }}</a>

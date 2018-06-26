@@ -14,11 +14,29 @@
     {% for picture in include.data %}
       {% if forloop.first == true %}
         <div class="carousel-item active">
-          <img class="img-responsive" src={{ picture.url }}>
+          {% if picture.title %}
+            <img src="{{ picture.url }}" alt="{{ picture.title }}">
+          {% else %}
+            <img src="{{ picture.url }}">
+          {% endif %}
+          {% if picture.caption %}
+            <div class="carousel-caption">
+              {{ picture.caption }}
+            </div>
+          {% endif %}
         </div>
       {% else %}
         <div class="carousel-item">
-          <img class="img-responsive" src={{ picture.url }}>
+          {% if picture.title %}
+            <img src="{{ picture.url }}" alt="{{ picture.title }}">
+          {% else %}
+            <img src="{{ picture.url }}">
+          {% endif %}
+          {% if picture.caption %}
+            <div class="carousel-caption">
+              {{ picture.caption }}
+            </div>
+          {% endif %}
         </div>
       {% endif %}
     {% endfor %}
@@ -31,5 +49,13 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-
+  <div class="carousel-overlay hidden-xs">
+    <div class="col-md-12 text-center">
+      <h1>The New England Model Engineering Society</h1>
+      <h3>
+        A group for those who enjoy metal working and machining.<br>
+        We meet monthly in Waltham MA.
+      </h3>
+    </div>
+  </div>
 </div>

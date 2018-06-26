@@ -1,16 +1,11 @@
 <!-- sidebar left col -->
-  <div id="logo">
-    <a href="{{ site.baseurl }}">
-      <img class="img-fluid"src="img/nemes_logo.svg">
-    </a> 
-  </div>
-  <ul class="navbar-nav">
-    {% for item in site.data.bar.side %}
-    <li class="nav-item">
+  <ul class="navbar-nav sidebar">
+    {% for item in site.data.nav.side %}
+    <li class="nav-item sidebar">
       {% if item.ext == true %}
-        <a href="{{ item.link }}" class="nav-link">{{ item.name }}</a>
+        <a href="{{ item.link }}" class="nav-link sidebar">{{ item.name }}</a>
       {% else %}
-        <a href="{{ site.baseurl }}{{ item.link }}" class="nav-link">{{ item.name }}</a>
+        <a href="{{ site.baseurl }}{{ item.link }}" class="nav-link sidebar">{{ item.name }}</a>
       {% endif %}
     </li>
     {% endfor %}
