@@ -1,8 +1,11 @@
 ---
-layout: post
 title: A sample post with many elements
-summary: We'll use this post to work out what we need to do to style an individual posts... let's get going!
+layout: post
+summary: We'll use this post to work out what we need to do to style an individual
+  posts... let's get going!
+picture: "/img/banner.png"
 ---
+
 # Heading 1
 ## Heading 2
 ### Heading 3
