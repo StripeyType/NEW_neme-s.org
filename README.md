@@ -26,7 +26,27 @@
  + `_data/home_carousel.json` chooses which and how many slides are in the carousel on the Home Page.
  + `_data/nav.json` describes the top and side navigation bars; the names, links, and so on.
 
-## Jekyll Posts
+## Posts
 
  Posts for the new site are very easy to write, with Jekyll and Bootstrap ensuring all of the links are correctly populated and all of the styling matches the rest of the site automatically.
  Be sure to look at the Jekyll documentation to understand how to write a post.
+
+## Home Page Carousel
+
+ To update the Carousel on the Home Page, you must edit `_data/home_carousel.json` and know the file path to the desired image. Images with very wide aspect ratios (16:9 or wider) work best.
+ Replace an existing JSON stanza, or add a new one:
+
+```JSON
+  {  
+    "title": "image",
+    "caption": "caption",  
+    "url": "/img/banner.png"
+  }
+```
+
+ + `title:` - Supplies the alt text string for accessibility.
+ + `caption:` - Supplies the text caption which will be displayed with the image.
+ + `url:` - the location of the image.
+
+ **n.b.** - JSON is fairly strict about commas. Ensure that the last member of any element does *not* have a trailing comma.
+
