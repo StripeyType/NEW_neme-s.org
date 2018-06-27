@@ -15,9 +15,9 @@
       {% if forloop.first == true %}
         <div class="carousel-item active">
           {% if picture.title %}
-            <img src="{{ picture.url }}" alt="{{ picture.title }}">
+            <img src="{{ picture.url }}" alt="{{ picture.title }}" style="height: 400px;">
           {% else %}
-            <img src="{{ picture.url }}">
+            <img src="{{ picture.url }}" style="height: 400px;">
           {% endif %}
           {% if picture.caption %}
             <div class="carousel-caption">
@@ -28,9 +28,9 @@
       {% else %}
         <div class="carousel-item">
           {% if picture.title %}
-            <img src="{{ picture.url }}" alt="{{ picture.title }}">
+            <img src="{{ picture.url }}" alt="{{ picture.title }}" style="height: 400px;">
           {% else %}
-            <img src="{{ picture.url }}">
+            <img src="{{ picture.url }}" style="height: 400px;">
           {% endif %}
           {% if picture.caption %}
             <div class="carousel-caption">

@@ -1,12 +1,11 @@
 .navbar-nav.sidebar {
-  
   .nav-item{
     font-size: 1.4rem;
     padding-right: 20px;
   }
 
   .nav-link{
-    color: $primary !important;
+    color: $info !important;
   
     &:hover {
       color: $white !important;
@@ -15,7 +14,8 @@
 }
 
 #sidebar {
+  padding-left: 1.5rem;
+  margin-top: $top-gap;
   padding: 1.5rem;
-  margin: 1.5rem;
-  background-color: $info !important;
+  background-color: $primary !important;
 }

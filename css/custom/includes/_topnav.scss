@@ -1,7 +1,7 @@
 .navbar {
   box-shadow: 5px 5px 8px $primary;
-  opacity: 0.8;
-  background: $primary;
+  opacity: 1.0;
+  background: $info !important;
 
   .nav-item{
     font-size: 1.4rem;
@@ -10,7 +10,7 @@
 }
 
 .nav-link {
-  color: $info !important;
+  color: $primary;
 
   &:hover {
     color: $white !important;
