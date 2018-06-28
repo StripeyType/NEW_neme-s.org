@@ -7,5 +7,5 @@ layout: default
 
 
 {% for issue in gazette_issues %}
- + [NEMES Gazette Issue {{ issue.issue }} for {{ issue.month }}](/gazette/{{ issue.file }})
+ + [NEMES Gazette Issue {{ issue.issue }} for {{ issue.month }}]({{ issue.file | relative_url }})
 {% endfor %}
