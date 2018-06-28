@@ -10,3 +10,11 @@
 #content {
   padding: 1.5rem;
 }
+
+#logo {
+  background-color: $primary;
+  background-image: url('/img/nemes_logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
