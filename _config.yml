@@ -1,9 +1,6 @@
 # Site settings
 title: "New England Model Engineering Society"
-email:
-author:
 description: "New England Model Engineering Society"
-url:
 
 # Make a preview of the new site available from /new-site/
 
@@ -12,12 +9,8 @@ permalink: :title/
 sass:
   sass_dir: css
 
-# Social icons
-show_social_icons: false 
-github_username: someGithubUser
-twitter_username: someTwitterUser
-
-# plugins
-plugins: [jekyll-paginate]
-paginate: 7
-
+defaults:
+  - scope:
+      path: "gazette"
+    values:
+      gazette: true
