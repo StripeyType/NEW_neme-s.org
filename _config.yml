@@ -9,8 +9,3 @@ permalink: :title/
 sass:
   sass_dir: css
 
-defaults:
-  - scope:
-      path: "gazette"
-    values:
-      gazette: true
