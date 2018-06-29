@@ -1,7 +1,7 @@
 ---
 title: NEMES Legal Documents
 layout: default
-permalink: legal
+permalink: /legal/
 ---
 
 # NEMES Legal Documents

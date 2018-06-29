@@ -1,7 +1,7 @@
 ---
 layout: home
 title:  Joining NEMES
-permalink: /join
+permalink: /join/
 ---
 
 ## Joining NEMES
