@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: 21st Annual NEMES Show
+title: sbrebuild
 summary: A Gallery of photos from the 21st Annual NEMES Exhibition in February
 ---
 

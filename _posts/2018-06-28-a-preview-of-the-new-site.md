@@ -1,13 +1,17 @@
 ---
 title: A Preview of the New NEMES Site
 layout: post
-summary: A note from the new Webmaster about this preview...
+summary: A note from the new Webmaster about this preview, and the work which remains to be done.
 picture: "/img/banner.png"
 ---
 
 Here we are, but we're far from finished. This is a preview of what the structure and navigation will look like for the new NEMES site.
 
-Most of this is all placeholders for what will come in the next few weeks and months. But it bears noting that the work which has gone into this so far lays important groundwork for the work yet to come - making everything easier from here on out.
+Most of this is all placeholders for what will come in the next few weeks and months. But it bears noting that the work which has gone into this so far lays important groundwork for the work yet to come - making everything easier from here on out. The aim is to do a sympathetic rebuild of the site, moving the old content, and trying to organize it better, without losing any NEMES content.
+
+Some things may be relocated from links on the Home Page to Posts of their own which will be in the Archives. Other things which are currently downloads of Office files (.xslx or .docx for example) will be properly turned into web content. And some things which represent redundant content may be consolidated for clarity (links to Other Clubs, links to Member Sites, Club-related links, links to model-building and acessories... all of these are simply *links* and can be presented on a single, well-organized page.)
+
+Some things which are not actual content on our site, but catalogs of links to other resources may go away: it doesn't make any sense at all to try to maintain a catalogue of every "Tubalcain" YouTube video, when Lyle posts a new one *at least* once a week. YouTube, as a Google product, has magnificent search capabilities for videos, and for specific content creators on YouTube, one can simply visit their Channel directly.
 
 At the last meeting, I was able to show the barest skeleton of what I had finished so far. While this preview does not _look_ much different from that, the work has primarily been behind the scenes, making this new site work better.
 
@@ -17,7 +21,7 @@ Together, these Jekyll and Bootstrap work to meet a few design criteria I had de
 
  + Static
  + Simple to maintain
- + In revision control ([git](https://git.io/))
+ + In revision control ([git](https://git-scm.com/))
  + Cohesive-looking
 
 #### Static

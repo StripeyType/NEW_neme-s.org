@@ -2,13 +2,11 @@
 layout: gallery
 title: 21st Annual NEMES Show
 summary: A Gallery of photos from the 21st Annual NEMES Exhibition in February
+gallery: assets/
 ---
 
-## Lorem
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, dolore.
+## 21st Annual NEMES Exhibition - 18 February 2017
 
-## More Lorem
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsam nam sit in omnis id. Ut molestiae non velit inventore quas, laborum dolorum maiores beatae animi aspernatur reprehenderit accusantium nostrum?
+[Embed YouTube video here](https://www.youtube.com/watch?v=xKjQ4tMJVUk)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsam nam sit in omnis id. Ut molestiae non velit inventore quas, laborum dolorum maiores beatae animi aspernatur reprehenderit accusantium nostrum?
-
+Also visit [NEMES member Dick Koolish's pictures from the event](http://www.dickkoolish.com/rmk_page/pictures_021817.html)
