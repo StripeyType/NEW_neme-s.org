@@ -6,6 +6,8 @@
   color: #FFF;
 }
 
-#home_carousel img {
-
+#home_carousel .carousel-inner > .item > .img,
+#home_carousel .carousel-inner > .item > a > .img {
+  margin: auto;
+  width: 70%
 }

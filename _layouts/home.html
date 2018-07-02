@@ -8,7 +8,15 @@
       </div>
       <div class="col-md-9" id="caro"> 
       {% include carousel.html name="home_carousel" data=site.data.home_carousel %}
-      {% include navbar.html %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center home-banner">
+        <h1>The New England Model Engineering Society</h1>
+        <h3>
+          A group for those who enjoy metal working and machining.<br>
+          We meet monthly in Waltham MA.
+        </h3>
       </div>
     </div>
     <div class="row">
@@ -16,6 +24,7 @@
       {% include sidebar.html %}
       </div>
       <div class="col-md-9" id="main">
+        {% include navbar.html %}
         <div id="content">
         {{ content }}
         </div>
