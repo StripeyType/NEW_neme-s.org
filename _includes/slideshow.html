@@ -15,9 +15,9 @@
       {% if forloop.first == true %}
         <div class="carousel-item active">
           {% if picture.title %}
-            <img src="{% asset_path {{ picture.url }} | relative_url %}" alt="{{ picture.title }}" class="img-fluid rounded mx-auto">
+            <img src="{%  {{ picture.url }} | relative_url %}" alt="{{ picture.title }}" class="img-fluid rounded mx-auto">
           {% else %}
-            <img src="{% asset_path {{ picture.url }} | relative_url %}" class="img-fluid rounded mx-auto">
+            <img src="{%  {{ picture.url }} | relative_url %}" class="img-fluid rounded mx-auto">
           {% endif %}
           {% if picture.caption %}
             <div class="carousel-caption">
@@ -28,9 +28,9 @@
       {% else %}
         <div class="carousel-item">
           {% if picture.title %}
-            <img src="{% asset_path {{ picture.url }} | relative_url %}" alt="{{ picture.title }}" class="img-fluid rounded mx-auto">
+            <img src="{%  {{ picture.url }} | relative_url %}" alt="{{ picture.title }}" class="img-fluid rounded mx-auto">
           {% else %}
-            <img src="{% asset_path {{ picture.url }} | relative_url %}" class="img-fluid rounded mx-auto">
+            <img src="{%  {{ picture.url }} | relative_url %}" class="img-fluid rounded mx-auto">
           {% endif %}
           {% if picture.caption %}
             <div class="carousel-caption">
