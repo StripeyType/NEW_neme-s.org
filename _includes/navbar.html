@@ -5,25 +5,9 @@
       {% for item in site.data.nav.top %} 
       <li class="nav-item">
         {% if item.ext == true %}
-          <a href="#{{ item.name }}-speedbump" class="nav-link" data-toggle="modal">
+          <a href="{{ item.link }}" class="nav-link" target="_blank">
             {{ item.name }}
           </a>
-          <div class="modal fade" id="{{ item.name }}-speedbump">
-            <div class="modal-dialog" style="background-color:#FFFFFF; pointer-events:auto">
-              <div class "modal-content">
-                <div class "modal-header">
-                  <h4>External Site Warning</h4>
-                </div>
-                <div class="modal-body">
-                  The {{ item.name }} is externally hosted, and will open in a new tab.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
-                  <a target="_blank" href="{{ item.link }}">OK</a>
-                </div>
-              </div>
-            </div>
-          </div>
         {% else %}
           <a href="{{ site.baseurl }}{{ item.link }}" class="nav-link">{{ item.name }}</a>
         {% endif %}
