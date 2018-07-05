@@ -2,7 +2,7 @@
 title: A Preview of the New NEMES Site
 layout: post
 summary: A note from the new Webmaster about this preview, and the work which remains to be done.
-picture: "/img/banner.png"
+picture: "/img/banner.jpeg"
 ---
 
 Here we are, but we're far from finished. This is a preview of what the structure and navigation will look like for the new NEMES site.

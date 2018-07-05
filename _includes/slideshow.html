@@ -1,42 +1,26 @@
-<div id="{{ include.name | escape }}" class="carousel slide" data-ride="carousel">
-<!-- Build the list of carousel indicators -->
-  <ol class="carousel-indicators">
-   {% for picture in post.data.images %}
-   {% if forloop.first == true %}
-     <li data-target="#{{ include.name | escape }}" data-slide-to="0" class="active"></li>
-   {% else %}
-     <li data-target="#{{ include.name | escape }}" data-slide-to="{{ forloop.index0 }}"></li>
-   {% endif %}
-   {% endfor %}
-  </ol>
-<!-- Build the slideshow proper -->
+<div id="post" class="container pt-3">
+  <div class="row">
+    <div class="col">
+      <p class="lead text-info">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </p>
+      <h1>{{ page.title }}</h1>
+      <article>
+        {{ content }}
+      </article>
+    </div>
+  </div>
+</div>
+<div id="gallery" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    {% for picture in post.data.images %}
+    {% for picture in page.static-gallery.items %}
       {% if forloop.first == true %}
         <div class="carousel-item active">
-          {% if picture.title %}
-            <img src="{%  {{ picture.url }} | relative_url %}" alt="{{ picture.title }}" class="img-fluid rounded mx-auto">
-          {% else %}
-            <img src="{%  {{ picture.url }} | relative_url %}" class="img-fluid rounded mx-auto">
-          {% endif %}
-          {% if picture.caption %}
-            <div class="carousel-caption">
-              {{ picture.caption }}
-            </div>
-          {% endif %}
+          <img class="center-block" src="{{ picture | relative_url }}" alt="untitled image">
         </div>
       {% else %}
         <div class="carousel-item">
-          {% if picture.title %}
-            <img src="{%  {{ picture.url }} | relative_url %}" alt="{{ picture.title }}" class="img-fluid rounded mx-auto">
-          {% else %}
-            <img src="{%  {{ picture.url }} | relative_url %}" class="img-fluid rounded mx-auto">
-          {% endif %}
-          {% if picture.caption %}
-            <div class="carousel-caption">
-              {{ picture.caption }}
-            </div>
-          {% endif %}
+          <img class="center-block" src="{{ picture | relative_url }}" alt="untitled image">
         </div>
       {% endif %}
     {% endfor %}
