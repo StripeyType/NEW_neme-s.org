@@ -11,6 +11,7 @@
     </div>
   </div>
 </div>
+{% if page.static-gallery.items %}
 <div id="gallery" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     {% for picture in page.static-gallery.items %}
@@ -34,3 +35,4 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+{% endif %}
