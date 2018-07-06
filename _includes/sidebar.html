@@ -3,9 +3,9 @@
     {% for item in site.data.nav.side %}
     <li class="nav-item sidebar">
       {% if item.ext == true %}
-        <a href="{{ item.link }}" class="nav-link sidebar">{{ item.name }}</a>
+        <a href="{{ item.link }}" class="nav-link sidebar btn btn-info">{{ item.name }}</a>
       {% else %}
-        <a href="{{ site.baseurl }}{{ item.link }}" class="nav-link sidebar">{{ item.name }}</a>
+        <a href="{{ site.baseurl }}{{ item.link }}" class="nav-link sidebar btn btn-info">{{ item.name }}</a>
       {% endif %}
     </li>
     {% endfor %}

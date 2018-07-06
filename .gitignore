@@ -13,4 +13,4 @@ _site/
 site/_site/
 test/dest
 tmp/*
-
+.DS_Store
