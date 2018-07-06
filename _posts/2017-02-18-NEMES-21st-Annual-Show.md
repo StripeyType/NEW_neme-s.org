@@ -6,8 +6,6 @@ static-gallery:
   path: "../../neme-s.org/2017/NEMES Show 2017/2017-02-18 A/"
 ---
 
-## 21st Annual NEMES Exhibition - 18 February 2017
-
 {% youtube "https://www.youtube.com/watch?v=xKjQ4tMJVUk" %}
 
 Also visit [NEMES member Dick Koolish's pictures from the event](http://www.dickkoolish.com/rmk_page/pictures_021817.html)
