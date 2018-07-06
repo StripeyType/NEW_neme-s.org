@@ -23,7 +23,7 @@ module Jekyll
           else
             target_abs = target
           end
-          post.data['static-gallery']['items'] = ['']
+          post.data['static-gallery']['items'] = []
           target_abs.each_child do |i| 
             if i.ftype == "file"
               item = i.to_s.sub(www_root.to_s,'')
