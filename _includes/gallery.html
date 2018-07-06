@@ -30,7 +30,7 @@
       <div class="modal-body">
   {% for picture in page.static-gallery.items %}
     <div class="lb-slide">
-      <div class="counttext">{{ forloop.index }} / {{ forloop.length }}>/div>
+      <div class="counttext">{{ forloop.index }} / {{ forloop.length }}</div>
       <img src="{{ picture }}" class="img-responsive img-rounded" alt="">
     </div>
   {% endfor %}
