@@ -3,72 +3,11 @@
   {% for picture in page.static-gallery.items %}
     {% cycle 'row-start': '<div class="row">', '', '', '', '', '' %}
   <div class="col">
-    <img src="{{ picture }}" onclick="openModal();currentSlide({{ forloop.index }})" class="hover-shadow" alt="untitled image">
+    <img src="{{ picture }}" class="hover-shadow" alt="untitled image">
   </div>
     {% cycle 'row-end': '', '', '', '', '', '</div>' %}
-  {% endfor %}
-
-<div id="lightboxModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-  {% for picture in page.static-gallery.items %}
-    {% assign n = forloop.length %}
-      <div class="lightboxSlide">
-        <div class="numbertext">{{ forloop.index }} / {{ n }}</div>
-        <img src="{{ picture }}" style="width:100%">
-      </div>
-  {% endfor %}
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
+    {% if forloop.last and forloop.length | divided_by: 6 > 0 %}
   </div>
-  {% for picture in page.static-gallery.items %}
-  <div class="col">
-    <img src="{{ picture }}" onclick="currentSlide({{ forloop.index }})" class="lb-thumb" alt="untitled image">
-  </div>
+    {% endif %}
   {% endfor %}
-  <script>
-// Open the Modal
-function openModal() {
-  document.getElementById('lightboxModal').style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById('lightboxModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("lightboxSlides");
-  var dots = document.getElementsByClassName("lb-thumb");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-{% endif %}
+</div>
