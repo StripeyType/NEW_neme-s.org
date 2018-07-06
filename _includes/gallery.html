@@ -1,14 +1,19 @@
 {% if page.static-gallery.items %}
 <div id="gallery">
+{% assign width = 4 %}
   {% for picture in page.static-gallery.items %}
-    {% cycle 'row-start': '<div class="row">', '', '', '', '', '' %}
+    {% cycle 'row-start': '<div class="row">', '', '', '' %}
   <div class="col">
-    <img src="{{ picture }}" class="hover-shadow" alt="untitled image">
+    <img src="{{ picture }}" class="img-responsive img-thumbnail" alt="untitled image">
   </div>
-    {% cycle 'row-end': '', '', '', '', '', '</div>' %}
-    {% assign mod = forloop.length | modulo:6 %}
+    {% cycle 'row-end':  '', '', '', '</div>' %}
+    {% assign mod = forloop.length | modulo:width %}
     {% if forloop.last and mod > 0 %}
-  </div>
+    {% assign rem = width | minus:mod %}
+    {% for i in (1..rem) %}
+    <div class="col"></div>
+    {% endfor %}
+    </div>
     {% endif %}
   {% endfor %}
 </div>
