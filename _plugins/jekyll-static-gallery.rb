@@ -6,7 +6,8 @@ module Jekyll
 
       baseurl = Pathname.new(site.baseurl)
       pwd = Pathname.new(Dir.pwd)
-      dest = Pathname.new(site.destination)
+
+      dest = Pathname.new(site.dest)
       if dest.relative?
         dest_abs = pwd + dest
       else
@@ -15,25 +16,19 @@ module Jekyll
       www_root = Pathname.new(dest_abs.to_s.chomp(baseurl.to_s))
 
       site.posts.docs.each do |post|
-        if post.data['static-gallery']
+        unless post.data['static-gallery'].nil?
           target = Pathname.new(post.data['static-gallery']['path'])
           if target.relative?
             target_abs = pwd + target
           else
             target_abs = target
           end
-          if target_abs.end_with?("/")
-            path_glob = location + "*"
-          else
-            path_glob = location + "/*"
-          end
-          post.data['static-gallery']['items'] = []
-          Dir[path_glob].each |item| 
-            item.sub!(www_root,'')
-            post.data['static-gallery']['items'].push(item)
-          end
-          if post.data['static-gallery']['items'].empty?
-            post.data['static-gallery']['items'] = nil
+          post.data['static-gallery']['items'] = ['']
+          target_abs.each_child do |i| 
+            if i.ftype == "file"
+              item = i.to_s.sub(www_root.to_s,'')
+              post.data['static-gallery']['items'].push(item)
+            end
           end
         end
       end
