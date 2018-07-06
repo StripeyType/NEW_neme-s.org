@@ -6,7 +6,8 @@
     <img src="{{ picture }}" class="hover-shadow" alt="untitled image">
   </div>
     {% cycle 'row-end': '', '', '', '', '', '</div>' %}
-    {% if forloop.last and forloop.length | divided_by: 6 > 0 %}
+    {% assign mod = forloop.length | modulo:6 %}
+    {% if forloop.last and mod > 0 %}
   </div>
     {% endif %}
   {% endfor %}
