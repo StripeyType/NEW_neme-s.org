@@ -3,7 +3,7 @@ layout: gallery
 title: 21st Annual NEMES Show
 summary: A Gallery of photos from the 21st Annual NEMES Exhibition in February
 static-gallery:
-  path: "../2017/NEMES Show 2017/"
+  path: "../../neme-s.org/2017/NEMES Show 2017/2017-02-18 A/"
 ---
 
 ## 21st Annual NEMES Exhibition - 18 February 2017
