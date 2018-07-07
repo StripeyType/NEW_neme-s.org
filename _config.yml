@@ -5,7 +5,7 @@ description: "New England Model Engineering Society"
 # Make a preview of the new site available from /new-site/
 
 # Build settings
-permalink: :title/
+permalink: pretty
 sass:
   sass_dir: css
 

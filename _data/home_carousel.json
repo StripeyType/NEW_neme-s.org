@@ -1,20 +1,20 @@
 [
   {
-    "title": "An image",
-    "caption": "A caption",
-    "url": "/img/banner.png",
+    "title": "Member-built engines displayed at our annual exhibition",
+    "caption": "Member-built engines displayed at our annual exhibition",
+    "url": "/img/banner-1.jpeg",
     "dest": "dest url"
   },
   {
-    "title": "Another image",
-    "caption": "Another caption",
-    "url": "/img/banner.png",
+    "title": "A steam-driven calliope, on display at CRMII",
+    "caption": "A steam-driven calliope, on display at CRMII",
+    "url": "/img/banner-2.jpeg",
     "dest": "dest url"
   },
   {
-    "title": "image",
-    "caption": "caption",
-    "url": "/img/banner.png",
+    "title": "A model steamboat",
+    "caption": "A model steamboat",
+    "url": "/img/banner-3.jpeg",
     "dest": "dest url"
   }
 ]

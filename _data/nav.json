@@ -11,13 +11,13 @@
       "ext": false
     },
     {
-      "name": "Other Clubs",
-      "link": "/clubs",
+      "name": "Projects",
+      "link": "/projects",
       "ext": false
     },
     {
-      "name": "Projects",
-      "link": "/projects",
+      "name": "Links",
+      "link": "/links",
       "ext": false
     },
     {

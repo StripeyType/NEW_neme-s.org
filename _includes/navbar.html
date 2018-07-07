@@ -5,9 +5,11 @@
       {% for item in site.data.nav.top %} 
       <li class="nav-item">
         {% if item.ext == true %}
-          <a href="{{ item.link }}" target="_blank" class="nav-link">{{ item.name }}</a>
+          <a href="{{ item.link }}" class="nav-link btn btn-primary" target="_blank" role="button">
+            {{ item.name }}
+          </a>
         {% else %}
-          <a href="{{ site.baseurl }}{{ item.link }}" class="nav-link">{{ item.name }}</a>
+          <a href="{{ site.baseurl }}{{ item.link }}" class="nav-link btn btn-primary" role="button">{{ item.name }}</a>
         {% endif %}
       </li>
       {% endfor %}

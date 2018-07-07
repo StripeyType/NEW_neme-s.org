@@ -15,9 +15,9 @@
       {% if forloop.first == true %}
         <div class="carousel-item active">
           {% if picture.title %}
-            <img src="{{ picture.url | relative_url }}" alt="{{ picture.title }}" style="height: 400px;">
+            <img class="center-block" src="{{ picture.url | relative_url }}" alt="{{ picture.title }}" style="height: 400px;">
           {% else %}
-            <img src="{{ picture.url | relative_url }}" style="height: 400px;">
+            <img class="center-block" src="{{ picture.url | relative_url }}" style="height: 400px;">
           {% endif %}
           {% if picture.caption %}
             <div class="carousel-caption">
@@ -28,9 +28,9 @@
       {% else %}
         <div class="carousel-item">
           {% if picture.title %}
-            <img src="{{ picture.url | relative_url }}" alt="{{ picture.title }}" style="height: 400px;">
+            <img class="center-block" src="{{ picture.url | relative_url }}" alt="{{ picture.title }}" style="height: 400px;">
           {% else %}
-            <img src="{{ picture.url | relative_url }}" style="height: 400px;">
+            <img class="center-block" src="{{ picture.url | relative_url }}" style="height: 400px;">
           {% endif %}
           {% if picture.caption %}
             <div class="carousel-caption">
@@ -49,13 +49,4 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-  <div class="carousel-overlay hidden-xs">
-    <div class="col-md-12 text-center">
-      <h1>The New England Model Engineering Society</h1>
-      <h3>
-        A group for those who enjoy metal working and machining.<br>
-        We meet monthly in Waltham MA.
-      </h3>
-    </div>
-  </div>
 </div>

@@ -1,14 +1,14 @@
 ---
 layout: home
 title:  Joining NEMES
-permalink: /join
+permalink: /join/
 ---
 
 ## Joining NEMES
 
 You may join NEMES by post or by E-Mail.
 
-Dues are $25 per year, covering the calendar year from January 1st through Decemerb 31st.
+Dues are $25 per year, covering the calendar year from January 1st through December 31st.
 
 ### Joining NEMES by post:
 

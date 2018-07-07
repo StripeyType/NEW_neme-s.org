@@ -1,0 +1,67 @@
+{% if page.static-gallery.items %}
+<div id="gallery">
+{% assign width = 4 %}
+  {% for picture in page.static-gallery.items %}
+    {% cycle 'row-start': '<div class="row">', '', '', '' %}
+  <div class="col">
+    <img src="{{ picture }}" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#lightboxModal" alt="untitled image" onclick="currentSlide({{ forloop.index }})">
+  </div>
+    {% cycle 'row-end':  '', '', '', '</div>' %}
+    {% assign mod = forloop.length | modulo:width %}
+    {% if forloop.last and mod > 0 %}
+    {% assign rem = width | minus:mod %}
+    {% for i in (1..rem) %}
+    <div class="col"></div>
+    {% endfor %}
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div id="lightboxModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ page.title }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+  {% for picture in page.static-gallery.items %}
+    <div class="lb-slide">
+      <div class="counttext">{{ forloop.index }} / {{ forloop.length }}</div>
+      <img src="{{ picture }}" class="img-responsive img-rounded" alt="">
+    </div>
+  {% endfor %}
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+    </div>
+  </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("lb-slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+</div>
+{% endif %}
